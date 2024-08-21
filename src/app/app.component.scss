@@ -1,0 +1,220 @@
+#non {
+    color: rgb(0, 0, 0);
+    position: relative;
+    left: 45px;
+}
+
+#oui {
+    color: rgb(0, 0, 0);
+    position: relative;
+    right: 6px;
+}
+
+#vol {
+    color: #2f6fb4;
+}
+
+#societe,
+#elle {
+    position: relative;
+    left: 50px;
+}
+
+@media (max-width: 768px) {
+    #non {
+        left: 0px; // Adjust as needed for smaller screens
+    }
+
+    #oui {
+        right: 0; // Adjust as needed for smaller screens
+    }
+
+    #societe,
+    #elle {
+        left: 20px; // Adjust as needed for smaller screens
+    }
+}
+
+@media (max-width: 480px) {
+    #non {
+        left: 10px; // Further adjustment for very small screens
+    }
+
+    #oui {
+        right: 10px; // Further adjustment for very small screens
+    }
+
+    #societe,
+    #elle {
+        left: 10px; // Further adjustment for very small screens
+    }
+}
+
+.responsive-input {
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 14px; // Adjust as needed
+      color: #333; // Adjust color as needed
+    }
+  
+    input {
+      width: 120px;
+      padding: 0px;
+      font-size: 14px;
+      border: 1px solid  rgb(243, 244, 247);
+      border-radius: 4px;
+      box-sizing: border-box;
+      background-color: rgb(243, 244, 247);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .responsive-input {
+      input {
+        padding: 8px;
+        font-size: 13px;
+      }
+    }
+  }
+
+
+  #textInput{
+    width: 120px;
+    
+  }
+  .switch-checkbox3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    left: 177px; // Added gap between switch and labels
+ 
+  }
+  
+  .switch-checkbox3 label {
+    margin: 0;
+    font-size: 13px;
+  }
+  
+  .switch-checkbox3 .form-check {
+    display: flex;
+    align-items: center;
+  }
+  
+  .switch-checkbox3 .form-check-input {
+    width: 50px;
+    height: 25px;
+    background-color: #e9ecef;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.2s;
+    margin-left: 10px;
+  
+    &:checked {
+      background-color: #073b74;
+    }
+  
+    &:before {
+      content: '';
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      background-color: white;
+      border-radius: 50%;
+      top: 1.5px;
+      left: 1.5px;
+      transition: transform 0.2s;
+    }
+  
+    &:checked:before {
+      transform: translateX(24px);
+    }
+  }
+
+  .form-row-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+
+  }
+
+  .form-row3{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+   
+  }
+
+#textInput6 {
+  width: 300px;
+  float: left;
+  padding: 5px;
+  position: relative;
+  right: 50px;
+}
+#red {
+  color: red;
+}
+
+
+#textInput7 {
+  width: 300px;
+  float: left;
+  padding: 5px;
+  position: relative;
+  
+}
+
+.switch-checkbox4{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  bottom: 43px;
+   // Added gap between switch and labels
+
+}
+
+.switch-checkbox4 label {
+  margin: 0;
+  font-size: 13px;
+}
+
+.switch-checkbox4 .form-check {
+  display: flex;
+  align-items: center;
+}
+
+.switch-checkbox4 .form-check-input {
+  width: 50px;
+  height: 25px;
+  background-color: #e9ecef;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.2s;
+  margin-left: 480px;
+
+  &:checked {
+    background-color: #073b74;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    border-radius: 50%;
+    top: 1.5px;
+    left: 1.5px;
+    transition: transform 0.2s;
+  }
+
+  &:checked:before {
+    transform: translateX(24px);
+  }
+}
+

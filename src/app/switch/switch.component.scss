@@ -1,0 +1,53 @@
+.switch-checkbox {
+
+    align-items: center;
+    width: 50px;
+    height: 25px;
+    background-color: #e9ecef;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-left: 32px;
+    top: 15px;
+    
+    // Hide the default checkbox appearance
+    .form-check-input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+  
+    // Style the custom switch appearance
+    &::before {
+      content: '';
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      background-color: white;
+      border-radius: 50%;
+      top: 1.5px;
+      left: 1.5px;
+      transition: transform 0.2s;
+    }
+    
+    // Apply styles when the checkbox is checked
+    .form-check-input:checked + & {
+      background-color: #073b74;
+    }
+  
+    .form-check-input:checked + &::before {
+      transform: translateX(25px);
+    }
+  }
+  
+  #non {
+    position: relative;
+    left: 46px;
+    color: rgb(3, 3, 3);
+  }
+  
+  #oui {
+    position: relative;
+    color: rgb(10, 10, 10);
+  }
+  

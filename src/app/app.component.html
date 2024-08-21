@@ -1,0 +1,446 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <h5>Description de risque</h5>
+  <div class="container">
+    <h3>Adresse de L'Habitat</h3>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="gouvernorat">Gouvernorat <strong><span id="red">*</span></strong></label>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(0, 1)"></formly-form>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="region">Région <strong><span id="red">*</span></strong></label>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(1, 2)"></formly-form>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="cite">Cité <strong><span id="red">*</span></strong></label>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(2, 3)"></formly-form>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="code_postal">Code Postale <strong><span id="red">*</span></strong></label>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(3, 4)"></formly-form>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="adresse">Adresse <strong><span id="red">*</span></strong></label>
+      <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(4, 5)"></formly-form>
+    </div>
+  </div>
+
+    <!-- theni container -->
+
+  <div class="container">
+    <h3>Details de l'Habitat</h3>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="localitaire">Vous êtes locataire ou propriétaire?<strong><span id="red">*</span></strong></label>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(0, 1)"></formly-form>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="batiment">Quelle est la valeur du bâtiment ? <strong><span id="red">*</span></strong></label>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(1, 2)"></formly-form>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="mobilier">Quelle est la valeur de mobilier ? <strong><span id="red">*</span></strong></label>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(7, 8)"></formly-form>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="habitation">Quel est le type de votre habitation ? <strong><span id="red">*</span></strong></label>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(8, 9)"></formly-form>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="piece">Quel est le nombre de pièce de votre habitation ? <strong><span id="red">*</span></strong></label>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(9, 10)"></formly-form>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="superficie">Quelle est la superficie totale de votre habitation ? <strong><span id="red">*</span></strong></label>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(10, 11)"></formly-form>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="construite">Quelle est la date à laquelle votre habitation a été construite ? <strong><span id="red">*</span></strong></label>
+      <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(11, 12)"></formly-form>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="dependance">Quel est le type de votre dépendance ?<strong><span id="red">*</span></strong></label>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(12, 13)"></formly-form>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="nombre_dependance">Nombre de dépendance ? <strong><span id="red">*</span></strong></label>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(13, 14)"></formly-form>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="occupant">Vous êtes occupant ou non occupant ? <strong><span id="red">*</span></strong>
+  <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(14, 15)"></formly-form>
+</label>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="logement">Nombre de personne occupant le logement<strong><span id="red">*</span></strong></label>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(15, 16)"></formly-form>
+
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <strong><label for="sinistre" id="sinistre">Pendant les 5 dérnieres années,votre logement a-t-il subi un sinistre?</label></strong>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(16, 17)"></formly-form>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="nature">Nature sinistre<strong><span id="red">*</span></strong></label>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(17, 18)"></formly-form>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-check form-switch d-flex align-items-center">
+       <strong><label for="systemeSecond" id="label-systeme">Vous avez un système de sécurité ?</label></strong>
+       <formly-form id="same" for="systemeSecond" [form]="form" [model]="modelWok" [fields]="fields.slice(17, 18)"></formly-form>
+      </div>
+    </div>
+    <div class="ul-li">
+      <ul>
+        <li>
+          <div class="form-group col-md-6">
+            <label for="switchSystemeAlarme"id="vol">Vous avez un système d'alarme anti-vol?<strong><span id="red"></span></strong></label>
+            <formly-form id="swicthami" for="switchSystemeAlarme" [form]="form" [model]="modelWok" [fields]="fields.slice(17, 18)"></formly-form>
+          </div>
+         
+        </li>
+    
+        <li>
+          <div class="form-group col-md-6">
+            <label for="alarme" id="societe">Le système d'alarme est-il relié à une société de surveillance ?<strong><span id="red"></span></strong></label>
+            <formly-form id="swicthami" for="alarme" [form]="form" [model]="modelWok" [fields]="fields.slice(17, 18)"></formly-form>
+          </div>
+         
+        </li>
+        <li>
+          <div class="form-group col-md-6">
+            <label for="switchCamereSurveillance2" id="elle">La propriété est-elle équipée de caméras de surveillance ?<strong><span id="red"></span></strong></label>
+            <formly-form id="swicthami" for="switchCamereSurveillance2" [form]="form" [model]="modelWok" [fields]="fields.slice(17, 18)"></formly-form>
+          </div>
+         
+        </li>
+      </ul>
+    </div>
+    <hr class="horizontal-line" />
+    <div class="ul-li">
+      <ul>
+        <li>
+          <div class="form-group col-md-6">
+            <label for="switchSystemeAlarme1"id="vol">Vous avez des Serrures et Dispositifs de Sécurité ?<strong><span id="red"></span></strong></label>
+            <formly-form id="swicthami" for="switchSystemeAlarme1" [form]="form" [model]="modelWok" [fields]="fields.slice(17, 18)"></formly-form>
+          </div>
+        </li>
+    
+        <li>
+          <div class="form-group col-md-6">
+            <label for="alarme2" id="societe">Les portes d'entrée sont-elle équipée de serrures multipoint ?<strong><span id="red"></span></strong></label>
+            <formly-form id="swicthami" for="switchSystemeAlarme1" [form]="form" [model]="modelWok" [fields]="fields.slice(17, 18)"></formly-form>
+          </div>
+         
+        </li>
+    
+        <li>
+          <div class="form-group col-md-6">
+            <label for="switchCamereSurveillance1" id="elle">Avez-vous des volet roulants ou des grilles de sécurité sur les fenétres ?<strong><span id="red"></span></strong></label>
+            <formly-form id="swicthami" for="switchSystemeAlarme1" [form]="form" [model]="modelWok" [fields]="fields.slice(17, 18)"></formly-form>
+          </div>
+        
+
+          
+        </li>
+
+        <li>
+          <div class="form-group col-md-6">
+            <label for="camerami" id="elle">Combien de jeux de clés de la propriété sont en circulation ?<strong><span id="red">*</span></strong></label>
+            <div class="responsive-input">
+              <input  for="camerami"  type="text" id="cam4" class="form-control"/>
+            </div>
+          </div>
+      
+
+          
+        </li>
+
+        <li>
+          <div class="form-group col-md-6">
+            <label for="ami" id="elle">Qui d'autre que les occupants principaux a un jeu de clés de la propriété ?<strong><span id="red"></span></strong></label>
+            <formly-form id="cam" [form]="form" [model]="modelWok" [fields]="fields.slice(1, 2)"></formly-form>
+          </div>
+   
+        </li>
+        
+      </ul>
+    </div>
+    <hr class="horizontal-line" />
+    <div class="ul-li">
+      <ul>
+        <li>
+          <div class="form-group col-md-6">
+            <label for="switchSystemeAlarme3"id="vol">Vous avez un gardien ?<strong><span id="red"></span></strong></label>
+            <formly-form id="swicthami" for="switchSystemeAlarme1" [form]="form" [model]="modelWok" [fields]="fields.slice(17, 18)"></formly-form>
+           
+          </div>
+  
+        </li>
+    
+        <li>
+          <div class="form-group col-md-6">
+            <label for="alarmeSociete" id="societe">Temps de travail ?<strong><span id="red"></span></strong></label>
+            <formly-form id="cam" [form]="form" [model]="modelWok" [fields]="fields.slice(1, 2)"></formly-form>
+          </div>
+ 
+        </li>
+      </ul>
+    </div>
+    <hr class="horizontal-line" />
+    <div class="ul-li">
+      <ul>
+        <li>
+          <div class="form-group col-md-6">
+            <label for="switchSystemeAlarme4"id="vol">Vous avez d'autres systémes de sécurité ?<strong><span id="red"></span></strong></label>
+            <formly-form id="swicthami" for="switchSystemeAlarme1" [form]="form" [model]="modelWok" [fields]="fields.slice(17, 18)"></formly-form>
+          </div>
+         
+        </li>
+    
+        <li>
+          <div class="form-group col-md-6">
+            <label for="alarmeSociete1" id="societe">Temps de travail ?<strong><span id="red"></span></strong></label>
+            <formly-form id="cam" [form]="form" [model]="modelWok" [fields]="fields.slice(1, 2)"></formly-form>
+          </div>
+        
+        </li>
+        <div class="form-group col-md-6">
+          <label for="alarmeSociete2" id="societe">Description d'autres systémes de sécurité ?<strong><span id="red"></span></strong></label>
+          <formly-form id="alarmeSociete2" [form]="form" [model]="modelWok" [fields]="fields.slice(11, 12)"></formly-form>
+        </div>
+        
+
+      </ul>
+    </div>
+    <div class="form-row-row">
+      <div class="form-check form-switch d-flex align-items-center">
+       <strong><label for="switchSystemeAlarme55" id="label-systeme">Cet habitat contient-il des objets de valeur ?</label></strong>
+       <formly-form id="notsame4" for="switchSystemeAlarme55" [form]="form" [model]="modelWok" [fields]="fields.slice(17, 18)"></formly-form>
+      </div>
+      
+    </div>
+    <div class="form-row3">
+      <div class="form-group col-md-6">
+        <label for="valeur">Valeur des objets? <strong><span id="red">*</span></strong></label>
+        <div class="responsive-input2">
+            
+          <input for="valeur" type="text" id="textInput6" class="form-control" />
+        </div>
+       
+      </div>
+      <div class="form-group col-md-6">
+        <label for="typeObjet3">Type objet de valeur ? <strong><span id="red">*</span></strong></label>
+        <div class="responsive-input">
+          <select for="typeObjet3" id="textInput7" class="form-control">
+            <option value=""></option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            
+          </select>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="form-row-row">
+      <div class="form-check form-switch d-flex align-items-center">
+       <strong><label for="switchSystemeAlarme6" id="label-systeme">Vous voulez assurer vos machines ?</label></strong>
+       <formly-form id="notsame66" for="switchSystemeAlarme6" [form]="form" [model]="modelWok" [fields]="fields.slice(17, 18)"></formly-form>
+      </div>
+    </div>
+   
+    <div class="ul-li23">
+      <ul>
+        <li>
+          <!-- Existing switch-checkbox structure -->
+          <div class="form-group col-md-6">
+            <label for="switchSystemeAlarme7" id="vol">Y a-t-il une piscine dans la propriété ?<strong><span id="red"></span></strong>
+              <formly-form id="swicthami" for="switchSystemeAlarme7" [form]="form" [model]="modelWok" [fields]="fields.slice(17, 18)"></formly-form>
+            </label>
+          </div>
+        </li>
+        
+        <!-- Three columns with labels and input fields -->
+        <li>
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label name="inputLabel1" id="label1">Numéro de série piscine ?</label>
+              <input type="text" id="inputLabel1" class="form-control" />
+            </div>
+    
+            <div class="form-group col-md-4">
+              <label for="inputLabel2" id="label2">Type et caractéristique ?</label>
+              <input type="text" id="inputLabel2" class="form-control" />
+            </div>
+    
+            <div class="form-group55">
+              <label for="inputLabel3" id="label3">Année de fabrication</label>
+              <input type="text" id="inputLabel3" class="form-control" />
+            </div>
+          </div>
+    
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="inputLabel4" id="label4">Nom de fabricant</label>
+              <input type="text" id="inputLabel4" class="form-control" />
+            </div>
+    
+            <div class="form-group66">
+              <label for="inputLabel5" id="label5">Valeur de remplacement a neuf</label>
+              <input type="text" id="inputLabel5" class="form-control" />
+            </div>
+    
+          
+          </div>
+        </li>
+      </ul>
+    </div>
+    <hr class="horizontal-line" />
+    <div class="ul-li23">
+      <ul>
+        <li>
+          <!-- Existing switch-checkbox structure -->
+          <div class="form-group col-md-6">
+            <label for="switchSystemeAlarme77" id="vol">La propriété a t-elle des dispositifs écologique ?
+              <strong><span id="red"></span></strong>
+            </label>
+            <formly-form id="swicthami" for="switchSystemeAlarme77" [form]="form" [model]="modelWok" [fields]="fields.slice(17, 18)"></formly-form>
+          </div>
+         
+        </li>
+        
+        <!-- Three columns with labels and input fields -->
+        <li>
+          <div class="form-row99">
+            <div class="form-group99 col-md-4">
+              <label for="inputLabel11" id="inputLabel11">Dispositifs écologique</label>
+              <select for="inputLabel11" id="textInput7" class="form-control">
+                <option value=""></option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+                
+              </select>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <hr class="horizontal-line" />
+
+    <div class="ul-li23">
+      <ul>
+        <li>
+          <!-- Existing switch-checkbox structure -->
+          <div class="form-group col-md-6">
+            <label for="switchSystemeAlarme78" id="vol">Vous voulez assurer votre contenu ?
+              <strong><span id="red"></span></strong>
+            </label>
+            <formly-form id="swicthami" for="switchSystemeAlarme78" [form]="form" [model]="modelWok" [fields]="fields.slice(17, 18)"></formly-form>
+          </div>
+         
+        </li>
+        
+        <!-- Three columns with labels and input fields -->
+        <li>
+          <div class="form-row99">
+            <div class="form-group99 col-md-4">
+              <label for="inputLabel12" id="inputLabel12">List des articles</label>
+              <select for="inputLabel12" id="textInput7" class="form-control">
+                <option value=""></option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="form-row-row">
+      <div class="form-check form-switch d-flex align-items-center">
+       <strong><label for="switchSystemeAlarme5" id="label-systeme">Y a-t-il des gens de maison ?</label></strong>
+       <formly-form id="notsame3" for="switchSystemeAlarme55" [form]="form" [model]="modelWok" [fields]="fields.slice(17, 18)"></formly-form>
+      </div>
+      
+    </div>
+    <div class="form-row3">
+      <div class="form-group col-md-6">
+        <label for="typeObjet">nombre de gens de maison<strong><span id="red">*</span></strong></label>
+        <div class="responsive-input">
+          <select for="typeObjet" id="textInput7" class="form-control">
+            <option value=""></option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            
+          </select>
+        </div>
+        
+      </div>
+      <div class="form-group col-md-6">
+        <label for="valeur2">Date de naissance de premiere personne<strong><span id="red">*</span></strong></label>
+        <div class="responsive-input2">
+            
+          <input for="valeur2" type="date" id="textInput6" class="form-control" />
+        </div>
+       
+        
+      </div>
+     
+    </div>
+
+
+    <div class="form-row3">
+      <div class="form-group col-md-6">
+        <label for="nomPersonne">Nom de premiere personne<strong><span id="red">*</span></strong></label>
+        <div class="responsive-input">
+          <input for="nomPersonne" id="textInput7" class="form-control">
+        </div>
+        
+      </div>
+      <div class="form-group col-md-6">
+        <label for="prenomPersonnage">Prenom de premiere personne<strong><span id="red">*</span></strong></label>
+        <div class="responsive-input2">
+          <input for="prenomPersonnage" type="text" id="textInput6" class="form-control" />
+        </div>
+
+        
+      </div>
+      <hr class="horizontal-line" />
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">Continue</button>
+      </div>
+    </div>
+  
+ 
+  </div>
+  
+
+
+</form>
